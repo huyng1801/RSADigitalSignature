@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Bengui</class>
+ <widget class="QWidget" name="Bengui">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>675</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Bengui{
+background-image: url(:/newPrefix/AdobeStock_141951442-1080x675.jpeg);
+}</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1080</width>
+     <height>675</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#widget{
+border-radius: 50px;
+background-image: url(:/newPrefix/AdobeStock_141951442-1080x675.jpeg);
+}</string>
+   </property>
+   <widget class="QLabel" name="LKhoabimat">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>570</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 0, 0);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; font-style:italic; text-decoration: underline; color:#ff0000;&quot;&gt;Khóa bí mật:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PBTinh">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>100</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border-radius: 20px;
+background-color: rgba(255, 255, 255, 50);
+}
+QPushButton:hover{
+background-color: rgba(255, 255, 255, 100);
+}
+QPushButton:pressed {
+     background-color: rgb(0, 0, 255);
+	border: 3px solid rgb(0, 0, 255);
+ }</string>
+    </property>
+    <property name="text">
+     <string>Tính</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="TEThongdiepdulieu">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>140</y>
+      <width>531</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit{
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border-radius: 20px;
+background-color: rgba(255,255, 255,50);
+}
+QTextEdit:focus{
+background-color: rgba(255, 255, 255, 100);
+}</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:14pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:7.8pt; font-weight:400;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LTaochukysoRSA">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>10</y>
+      <width>521</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#wiget{
+background-image:url(:/newPrefix/AdobeStock_141951442-1080x675.jpeg);
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:28pt; font-weight:600; font-style:italic; color:#00ff00;&quot;&gt;Tạo chữ ký số RSA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lp">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>178</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#00ff00;&quot;&gt;p:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="LEPn">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>280</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+font: 11pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border: none;
+border-bottom: 2px solid rgb(0, 255, 0);
+background-color: rgba(255, 255, 255, 0);
+}
+QLineEdit:focus{
+border: none;
+border-bottom: 2px solid rgb(0, 0, 255);
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lq">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>268</y>
+      <width>55</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#00ff00;&quot;&gt;q:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LThongdiepdulieu">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>90</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; font-style:italic; text-decoration: underline; color:#00ff00;&quot;&gt;Thông điệp dữ liệu:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Le">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>368</y>
+      <width>55</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 170, 0)</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#00ff00;&quot;&gt;e:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LPn">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>278</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#00ff00;&quot;&gt;φ(n):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="LEn">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>180</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00ff00;&quot;&gt;sfdf&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+font: 11pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border: none;
+border-bottom: 2px solid rgb(0, 255, 0);
+background-color: rgba(255, 255, 255, 0);
+}
+QLineEdit:focus{
+border: none;
+border-bottom: 2px solid rgb(0, 0, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="LEd">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>370</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+font: 11pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border: none;
+border-bottom: 2px solid rgb(0, 255, 0);
+background-color: rgba(255, 255, 255, 0);
+}
+QLineEdit:focus{
+border: none;
+border-bottom: 2px solid rgb(0, 0, 255);
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LKhoacongkhai">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>470</y>
+      <width>231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 255, 0);
+font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; font-style:italic; text-decoration: underline; color:#00ff00;&quot;&gt;Khóa công khai:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PBGui">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>791</x>
+      <y>610</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>14</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border-radius: 20px;
+background-color: rgba(255, 255, 255, 50);
+}
+QPushButton:hover{
+background-color: rgba(255, 255, 255, 100);
+}
+QPushButton:pressed {
+     background-color: rgb(0, 0, 255);
+	border: 3px solid rgb(0, 0, 255);
+ }</string>
+    </property>
+    <property name="text">
+     <string>Gửi &gt;&gt;&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PBXoachuky">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>330</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border-radius: 20px;
+background-color: rgba(255, 255, 255, 50);
+}
+QPushButton:hover{
+background-color: rgb(255, 0, 0);
+}
+QPushButton:pressed {
+     background-color: rgb(0, 0, 255);
+	border: 3px solid rgb(0, 0, 255);
+ }</string>
+    </property>
+    <property name="text">
+     <string>Xóa</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Ln">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>178</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#00ff00;&quot;&gt;n:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LSinhkhoa">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>371</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:28pt; font-weight:600; font-style:italic; color:#00ff00;&quot;&gt;Sinh khóa&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="LEe">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>370</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+font: 11pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border: none;
+border-bottom: 2px solid rgb(0, 255, 0);
+background-color: rgba(255, 255, 255, 0);
+}
+QLineEdit:focus{
+border: none;
+border-bottom: 2px solid rgb(0, 0, 255);
+}</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="TEChukyso">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>500</y>
+      <width>531</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit{
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border-radius: 20px;
+background-color: rgba(255,255, 255,50);
+}
+QTextEdit:focus{
+background-color: rgba(255, 255, 255, 100);
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LChukyso">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>450</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; font-style:italic; text-decoration: underline; color:#00ff00;&quot;&gt;Chữ ký số:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="LEp">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>180</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+font: 11pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border: none;
+border-bottom: 2px solid rgb(0, 255, 0);
+background-color: rgba(255, 255, 255, 0);
+}
+QLineEdit:focus{
+border: none;
+border-bottom: 2px solid rgb(0, 0, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PBXoakhoa">
+    <property name="geometry">
+     <rect>
+      <x>299</x>
+      <y>100</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border-radius: 20px;
+background-color: rgba(255, 255, 255, 50);
+}
+QPushButton:hover{
+background-color: rgb(255, 0, 0);
+}
+QPushButton:pressed {
+     background-color: rgb(0, 0, 255);
+	border: 3px solid rgb(0, 0, 255);
+ }</string>
+    </property>
+    <property name="text">
+     <string>Xóa</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PBTaochuky">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>330</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border-radius: 20px;
+background-color: rgba(255, 255, 255, 50);
+}
+QPushButton:hover{
+background-color: rgba(255, 255, 255, 100);
+}
+QPushButton:pressed {
+     background-color: rgb(0, 0, 255);
+	border: 3px solid rgb(0, 0, 255);
+ }</string>
+    </property>
+    <property name="text">
+     <string>Tạo chữ ký</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="LEMabamSHA1">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>390</y>
+      <width>531</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border-radius: 20px;
+background-color: rgba(255,255, 255,50);
+}
+QLineEdit:focus{
+background-color: rgba(255, 255, 255, 100);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LMabamSHA1">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>340</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; font-style:italic; text-decoration: underline; color:#00ff00;&quot;&gt;Mã băm (SHA1):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="LEq">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>270</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+font: 11pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border: none;
+border-bottom: 2px solid rgb(0, 255, 0);
+background-color: rgba(255, 255, 255, 0);
+}
+QLineEdit:focus{
+border: none;
+border-bottom: 2px solid rgb(0, 0, 255);
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Ld">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>368</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#00ff00;&quot;&gt;d:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PBTudong">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>100</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border-radius: 20px;
+background-color: rgba(255, 255, 255, 50);
+}
+QPushButton:hover{
+background-color: rgba(255, 255, 255, 100);
+}
+QPushButton:pressed {
+     background-color: rgb(0, 0, 255);
+	border: 3px solid rgb(0, 0, 255);
+ }</string>
+    </property>
+    <property name="text">
+     <string>Tự động</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PBThoat">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>610</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border-radius: 20px;
+background-color: rgba(255, 255, 255, 50);
+}
+QPushButton:hover{
+background-color: rgba(255, 255, 255, 100);
+}
+QPushButton:pressed {
+     background-color: rgb(0, 0, 255);
+	border: 3px solid rgb(0, 0, 255);
+ }</string>
+    </property>
+    <property name="text">
+     <string>Thoát</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lne">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>470</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 255, 0);
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lnd">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>570</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 0, 0);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LLammo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1080</width>
+      <height>675</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+background-color: rgba(0, 0, 0, 150);
+border-radius: 50px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>LLammo</zorder>
+   <zorder>LKhoabimat</zorder>
+   <zorder>PBTinh</zorder>
+   <zorder>TEThongdiepdulieu</zorder>
+   <zorder>LTaochukysoRSA</zorder>
+   <zorder>Lp</zorder>
+   <zorder>LEPn</zorder>
+   <zorder>Lq</zorder>
+   <zorder>LThongdiepdulieu</zorder>
+   <zorder>Le</zorder>
+   <zorder>LPn</zorder>
+   <zorder>LEn</zorder>
+   <zorder>LEd</zorder>
+   <zorder>LKhoacongkhai</zorder>
+   <zorder>PBGui</zorder>
+   <zorder>PBXoachuky</zorder>
+   <zorder>Ln</zorder>
+   <zorder>LSinhkhoa</zorder>
+   <zorder>LEe</zorder>
+   <zorder>TEChukyso</zorder>
+   <zorder>LChukyso</zorder>
+   <zorder>LEp</zorder>
+   <zorder>PBXoakhoa</zorder>
+   <zorder>PBTaochuky</zorder>
+   <zorder>LEMabamSHA1</zorder>
+   <zorder>LMabamSHA1</zorder>
+   <zorder>LEq</zorder>
+   <zorder>Ld</zorder>
+   <zorder>PBTudong</zorder>
+   <zorder>PBThoat</zorder>
+   <zorder>Lne</zorder>
+   <zorder>Lnd</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="source.qrc"/>
+ </resources>
+ <connections/>
+</ui>

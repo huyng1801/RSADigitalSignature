@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Bennhan</class>
+ <widget class="QWidget" name="Bennhan">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>559</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Bennhan{
+background-image: url(:/newPrefix/bennhan.jpg);
+}</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>559</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#widget{
+background-image: url(:/newPrefix/bennhan.jpg);
+border-radius: 50px;
+}</string>
+   </property>
+   <widget class="QTextEdit" name="TEChukynhanduoc">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>360</y>
+      <width>391</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit{
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border-radius: 20px;
+background-color: rgba(255,255, 255,50);
+}
+QTextEdit:focus{
+background-color: rgba(255, 255, 255, 100);
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LChukynhanduoc">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>320</y>
+      <width>351</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; font-style:italic; text-decoration: underline; color:#00ff00;&quot;&gt;Chữ ký nhận được:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LMabamSHA1">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>140</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; font-style:italic; text-decoration: underline; color:#00ff00;&quot;&gt;Mã băm (SHA1):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PBXacminh">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>490</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border-radius: 20px;
+background-color: rgba(255, 255, 255, 50);
+}
+QPushButton:hover{
+background-color: rgba(255, 255, 255, 100);
+}
+QPushButton:pressed {
+     background-color: rgb(0, 0, 255);
+	border: 3px solid rgb(0, 0, 255);
+ }</string>
+    </property>
+    <property name="text">
+     <string>Xác minh</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LThamdinhchukysoRSA">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>40</y>
+      <width>781</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; font-style:italic; color:#ff0000;&quot;&gt;Thẩm định chữ ký số RSA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LThongdiepnhanduoc">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>140</y>
+      <width>361</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; font-style:italic; text-decoration: underline; color:#00ff00;&quot;&gt;Thông điệp nhận được:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="TEGiaimachuky">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>360</y>
+      <width>391</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit{
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border-radius: 20px;
+background-color: rgba(255,255, 255,50);
+}
+QTextEdit:focus{
+background-color: rgba(255, 255, 255, 100);
+}</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="TEThongdiepnhanduoc">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>180</y>
+      <width>391</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit{
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border-radius: 20px;
+background-color: rgba(255,255, 255,50);
+}
+QTextEdit:focus{
+background-color: rgba(255, 255, 255, 100);
+}</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="TEMabamSHA1">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>180</y>
+      <width>391</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit{
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border-radius: 20px;
+background-color: rgba(255,255, 255,50);
+}
+QTextEdit:focus{
+background-color: rgba(255, 255, 255, 100);
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LGiaimachuky">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>320</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; font-style:italic; text-decoration: underline; color:#00ff00;&quot;&gt;Giải mã chữ ký:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PBThoat">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>490</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border-radius: 20px;
+background-color: rgba(255, 255, 255, 50);
+}
+QPushButton:hover{
+background-color: rgb(255, 0, 0);
+}
+QPushButton:pressed {
+     background-color: rgb(0, 0, 255);
+	border: 3px solid rgb(0, 0, 255);
+ }</string>
+    </property>
+    <property name="text">
+     <string>Thoát</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PBQuaylai">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>490</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);
+border-radius: 20px;
+background-color: rgba(255, 255, 255, 50);
+}
+QPushButton:hover{
+background-color: rgba(255, 255, 255, 100);
+}
+QPushButton:pressed {
+     background-color: rgb(0, 0, 255);
+	border: 3px solid rgb(0, 0, 255);
+ }</string>
+    </property>
+    <property name="text">
+     <string>Quay lại</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1000</width>
+      <height>559</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 50px;
+background-color: rgba(0, 0, 0, 100);</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>TEChukynhanduoc</zorder>
+   <zorder>LChukynhanduoc</zorder>
+   <zorder>LMabamSHA1</zorder>
+   <zorder>PBXacminh</zorder>
+   <zorder>LThamdinhchukysoRSA</zorder>
+   <zorder>LThongdiepnhanduoc</zorder>
+   <zorder>TEGiaimachuky</zorder>
+   <zorder>TEThongdiepnhanduoc</zorder>
+   <zorder>TEMabamSHA1</zorder>
+   <zorder>LGiaimachuky</zorder>
+   <zorder>PBThoat</zorder>
+   <zorder>PBQuaylai</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="source.qrc"/>
+ </resources>
+ <connections/>
+</ui>
